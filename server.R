@@ -7,7 +7,10 @@ shinyServer(function(input, output) {
   
   output$map = renderPlot({
     df_ca_tract_demographics$value = df_ca_tract_demographics[, input$value]
-    ca_tract_choropleth(df_ca_tract_demographics, county_zoom=input$counties)
+    num_colors = as.numeric(input$num_colors)
+    ca_tract_choropleth(df_ca_tract_demographics, 
+                        num_colors=num_colors,
+                        county_zoom=input$counties)
   })
   
   output$boxplot = renderPlot({

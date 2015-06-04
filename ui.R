@@ -38,7 +38,11 @@ shinyUI(fluidPage(
       selectInput("value",
                   "value",
                   demographics,
-                  selected="per_capita_income")                
+                  selected="per_capita_income"),
+      selectInput("num_colors",
+                  "Number of Colors",
+                  1:9,
+                  selected=7)                  
     ),
 
     mainPanel(
