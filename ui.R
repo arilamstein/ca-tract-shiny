@@ -42,7 +42,8 @@ shinyUI(fluidPage(
     ),
 
     mainPanel(
-      plotOutput("map")
+      plotOutput("map"),
+      plotOutput("boxplot")
     )
   )
 ))

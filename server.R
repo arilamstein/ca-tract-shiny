@@ -9,4 +9,9 @@ shinyServer(function(input, output) {
     df_ca_tract_demographics$value = df_ca_tract_demographics[, input$value]
     ca_tract_choropleth(df_ca_tract_demographics, county_zoom=input$counties)
   })
+  
+  output$boxplot = renderPlot({
+    df_ca_tract_demographics$value = df_ca_tract_demographics[, input$value]
+    boxplot(df_ca_tract_demographics$value)
+  })
 })
