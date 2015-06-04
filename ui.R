@@ -1,6 +1,7 @@
 library(shiny)
 library(choroplethrCaCensusTract)
 library(choroplethrMaps)
+library(markdown)
 
 data(county.regions)
 ca.counties = county.regions[county.regions$state.name == "california", c("region", "county.name")]
@@ -27,6 +28,8 @@ bay.area.county.fips = c(
 shinyUI(fluidPage(
 
   titlePanel("2012 Census Tract Explorer for California"),
+
+  fluidRow(column(12, includeMarkdown("1.md"))),
 
   sidebarLayout(
     sidebarPanel(
