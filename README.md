@@ -1,7 +1,7 @@
 # ca-tract-shiny
 
 This repository contains code for a web application that allows users to explore the demographics of
-US Census Tracts in California. You can see the running application [here](https://www.shinyapps.io/admin/#/application/45368).
+US Census Tracts in California. You can see the running application [here](http://shiny.rstudio.com/).
 The app is written in R.
 
 The app is intended as an example of a few technologies:
