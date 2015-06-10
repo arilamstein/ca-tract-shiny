@@ -14,15 +14,15 @@ demographics = colnames(df_ca_tract_demographics)[2:9]
 
 bay.area.county.fips = c(
   6075, # san francisco
-#  6013, # contra costa
+  6013, # contra costa
   6041, # marin
-#  6055, # napa
+  6055, # napa
   6001, # alameda
-#  6069, # san benito
-  6081#, # san mateo
-#  6085, # santa clara
-#  6087, # santa cruz
-#  6097  # sonoma
+  6069, # san benito
+  6081, # san mateo
+  6085, # santa clara
+  6087, # santa cruz
+  6097  # sonoma
 )
 
 shinyUI(fluidPage(
