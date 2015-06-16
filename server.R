@@ -1,4 +1,4 @@
-list.of.packages <- c("choroplethr", "devtools", "shiny", "R6")
+list.of.packages <- c("choroplethr", "devtools", "shiny", "R6", "mapproj")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
 
@@ -7,6 +7,7 @@ library(shiny)
 library(devtools)
 library(choroplethr)
 library(ggplot2)
+library(mapproj)
 
 if (!"choroplethrCaCensusTract" %in% installed.packages()[, "Package"]) {
   install_github('arilamstein/choroplethrCaCensusTract')
