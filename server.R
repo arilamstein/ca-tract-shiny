@@ -50,7 +50,7 @@ shinyServer(function(input, output) {
     num_colors = as.numeric(input$num_colors)
     ca_tract_choropleth_no_border(df_ca_tract_demographics, 
                         num_colors=num_colors,
-                        county_zoom=input$counties)
+                        county_zoom=input$counties) + coord_map()
   })
   
   output$boxplot = renderPlot({
