@@ -10,3 +10,4 @@ The app is intended as an example of a few technologies:
 with California Census Tracts and Data in R.
 2. [Shiny](http://shiny.rstudio.com/), the web application framework in R.
 
+The blog post about this app is [here](http://www.arilamstein.com/blog/2015/06/18/new-app-for-exploring-census-tract-demographics/).
